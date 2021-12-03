@@ -28,8 +28,5 @@ jobs:
    # - name: Gradle Wrapper Validation
    #   uses: gradle/wrapper-validation-action@v1.0.4
     - name: Build with Gradle
-      uses: gradle/gradle-build-action@v2.0.1
-      with:
-        arguments: build
-        gradle-version: current
+      run: ./gradlew build
     
